@@ -28,108 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tile1Btn = new Button();
-            tile2Btn = new Button();
-            tile3Btn = new Button();
-            tile6Btn = new Button();
-            tile5Btn = new Button();
-            tile4Btn = new Button();
-            tile9Btn = new Button();
-            tile8Btn = new Button();
-            tile7Btn = new Button();
+            tile1 = new Button();
+            tile2 = new Button();
+            tile3 = new Button();
+            tile6 = new Button();
+            tile5 = new Button();
+            tile4 = new Button();
+            tile9 = new Button();
+            tile8 = new Button();
+            tile7 = new Button();
             label1 = new Label();
             newGameBtn = new Button();
             SuspendLayout();
             // 
-            // tile1Btn
+            // tile1
             // 
-            tile1Btn.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile1Btn.Location = new Point(43, 74);
-            tile1Btn.Name = "tile1Btn";
-            tile1Btn.Size = new Size(70, 63);
-            tile1Btn.TabIndex = 0;
-            tile1Btn.UseVisualStyleBackColor = true;
-            tile1Btn.Click += tile1Btn_Click;
+            tile1.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            tile1.Location = new Point(43, 74);
+            tile1.Name = "tile1";
+            tile1.Size = new Size(70, 63);
+            tile1.TabIndex = 0;
+            tile1.UseVisualStyleBackColor = true;
+            tile1.Click += tile1Btn_Click;
             // 
-            // tile2Btn
+            // tile2
             // 
-            tile2Btn.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile2Btn.Location = new Point(133, 74);
-            tile2Btn.Name = "tile2Btn";
-            tile2Btn.Size = new Size(70, 63);
-            tile2Btn.TabIndex = 1;
-            tile2Btn.UseVisualStyleBackColor = true;
-            tile2Btn.Click += tile2Btn_Click;
+            tile2.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            tile2.Location = new Point(133, 74);
+            tile2.Name = "tile2";
+            tile2.Size = new Size(70, 63);
+            tile2.TabIndex = 1;
+            tile2.UseVisualStyleBackColor = true;
+            tile2.Click += tile2Btn_Click;
             // 
-            // tile3Btn
+            // tile3
             // 
-            tile3Btn.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile3Btn.Location = new Point(224, 74);
-            tile3Btn.Name = "tile3Btn";
-            tile3Btn.Size = new Size(70, 63);
-            tile3Btn.TabIndex = 2;
-            tile3Btn.UseVisualStyleBackColor = true;
-            tile3Btn.Click += tile3Btn_Click;
+            tile3.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            tile3.Location = new Point(224, 74);
+            tile3.Name = "tile3";
+            tile3.Size = new Size(70, 63);
+            tile3.TabIndex = 2;
+            tile3.UseVisualStyleBackColor = true;
+            tile3.Click += tile3Btn_Click;
             // 
-            // tile6Btn
+            // tile6
             // 
-            tile6Btn.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile6Btn.Location = new Point(224, 162);
-            tile6Btn.Name = "tile6Btn";
-            tile6Btn.Size = new Size(70, 63);
-            tile6Btn.TabIndex = 5;
-            tile6Btn.UseVisualStyleBackColor = true;
-            tile6Btn.Click += tile6Btn_Click;
+            tile6.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            tile6.Location = new Point(224, 162);
+            tile6.Name = "tile6";
+            tile6.Size = new Size(70, 63);
+            tile6.TabIndex = 5;
+            tile6.UseVisualStyleBackColor = true;
+            tile6.Click += tile6Btn_Click;
             // 
-            // tile5Btn
+            // tile5
             // 
-            tile5Btn.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile5Btn.Location = new Point(133, 162);
-            tile5Btn.Name = "tile5Btn";
-            tile5Btn.Size = new Size(70, 63);
-            tile5Btn.TabIndex = 4;
-            tile5Btn.UseVisualStyleBackColor = true;
-            tile5Btn.Click += tile5Btn_Click;
+            tile5.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            tile5.Location = new Point(133, 162);
+            tile5.Name = "tile5";
+            tile5.Size = new Size(70, 63);
+            tile5.TabIndex = 4;
+            tile5.UseVisualStyleBackColor = true;
+            tile5.Click += tile5Btn_Click;
             // 
-            // tile4Btn
+            // tile4
             // 
-            tile4Btn.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile4Btn.Location = new Point(43, 162);
-            tile4Btn.Name = "tile4Btn";
-            tile4Btn.Size = new Size(70, 63);
-            tile4Btn.TabIndex = 3;
-            tile4Btn.UseVisualStyleBackColor = true;
-            tile4Btn.Click += tile4Btn_Click;
+            tile4.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            tile4.Location = new Point(43, 162);
+            tile4.Name = "tile4";
+            tile4.Size = new Size(70, 63);
+            tile4.TabIndex = 3;
+            tile4.UseVisualStyleBackColor = true;
+            tile4.Click += tile4Btn_Click;
             // 
-            // tile9Btn
+            // tile9
             // 
-            tile9Btn.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile9Btn.Location = new Point(224, 255);
-            tile9Btn.Name = "tile9Btn";
-            tile9Btn.Size = new Size(70, 63);
-            tile9Btn.TabIndex = 8;
-            tile9Btn.UseVisualStyleBackColor = true;
-            tile9Btn.Click += tile9Btn_Click;
+            tile9.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            tile9.Location = new Point(224, 255);
+            tile9.Name = "tile9";
+            tile9.Size = new Size(70, 63);
+            tile9.TabIndex = 8;
+            tile9.UseVisualStyleBackColor = true;
+            tile9.Click += tile9Btn_Click;
             // 
-            // tile8Btn
+            // tile8
             // 
-            tile8Btn.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile8Btn.Location = new Point(133, 255);
-            tile8Btn.Name = "tile8Btn";
-            tile8Btn.Size = new Size(70, 63);
-            tile8Btn.TabIndex = 7;
-            tile8Btn.UseVisualStyleBackColor = true;
-            tile8Btn.Click += tile8Btn_Click;
+            tile8.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            tile8.Location = new Point(133, 255);
+            tile8.Name = "tile8";
+            tile8.Size = new Size(70, 63);
+            tile8.TabIndex = 7;
+            tile8.UseVisualStyleBackColor = true;
+            tile8.Click += tile8Btn_Click;
             // 
-            // tile7Btn
+            // tile7
             // 
-            tile7Btn.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile7Btn.Location = new Point(43, 255);
-            tile7Btn.Name = "tile7Btn";
-            tile7Btn.Size = new Size(70, 63);
-            tile7Btn.TabIndex = 6;
-            tile7Btn.UseVisualStyleBackColor = true;
-            tile7Btn.Click += tile7Btn_Click;
+            tile7.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            tile7.Location = new Point(43, 255);
+            tile7.Name = "tile7";
+            tile7.Size = new Size(70, 63);
+            tile7.TabIndex = 6;
+            tile7.UseVisualStyleBackColor = true;
+            tile7.Click += tile7Btn_Click;
             // 
             // label1
             // 
@@ -163,15 +163,15 @@
             ClientSize = new Size(334, 397);
             Controls.Add(newGameBtn);
             Controls.Add(label1);
-            Controls.Add(tile9Btn);
-            Controls.Add(tile8Btn);
-            Controls.Add(tile7Btn);
-            Controls.Add(tile6Btn);
-            Controls.Add(tile5Btn);
-            Controls.Add(tile4Btn);
-            Controls.Add(tile3Btn);
-            Controls.Add(tile2Btn);
-            Controls.Add(tile1Btn);
+            Controls.Add(tile9);
+            Controls.Add(tile8);
+            Controls.Add(tile7);
+            Controls.Add(tile6);
+            Controls.Add(tile5);
+            Controls.Add(tile4);
+            Controls.Add(tile3);
+            Controls.Add(tile2);
+            Controls.Add(tile1);
             ForeColor = SystemColors.ControlLightLight;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "TicTactoe";
@@ -185,15 +185,15 @@
 
         #endregion
 
-        private Button tile1Btn;
-        private Button tile2Btn;
-        private Button tile3Btn;
-        private Button tile6Btn;
-        private Button tile5Btn;
-        private Button tile4Btn;
-        private Button tile9Btn;
-        private Button tile8Btn;
-        private Button tile7Btn;
+        private Button tile1;
+        private Button tile2;
+        private Button tile3;
+        private Button tile6;
+        private Button tile5;
+        private Button tile4;
+        private Button tile9;
+        private Button tile8;
+        private Button tile7;
         private Label label1;
         private Button newGameBtn;
     }
