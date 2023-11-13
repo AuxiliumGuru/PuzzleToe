@@ -1,5 +1,6 @@
 
 
+using BracketQuest;
 using System;
 using System.Security.Cryptography.X509Certificates;
 
@@ -25,6 +26,9 @@ namespace TicTacToe
 
         // Wordle Form
         Wordle.Wordle wordleForm;
+
+        // CalcuFix Form
+        CalcuFix calcuFixForm;
 
         //String playerMove;
         int currentMove = 0;
@@ -86,8 +90,13 @@ namespace TicTacToe
                 getWordleGame(sender);
             }
 
-            else //(num_tiles_played_x >= 0)
+            else if (num_tiles_played_x > 2)
             {
+                getCalcuFixGame(sender);
+            }
+
+            else
+            { 
                 getFindMeGame(sender);
             }
         }
@@ -99,7 +108,12 @@ namespace TicTacToe
                 getWordleGame(sender);
             }
 
-            else if (num_tiles_played_x >= 0)
+            else if (num_tiles_played_x > 2)
+            {
+                getCalcuFixGame(sender);
+            }
+
+            else
             {
                 getFindMeGame(sender);
             }
@@ -115,6 +129,13 @@ namespace TicTacToe
             IfSolvedPuzzle(sender, findMeForm.IsWin);
         }
 
+        public void getCalcuFixGame(object sender)
+        {
+            calcuFixForm = new CalcuFix();
+            calcuFixForm.ShowDialog();
+
+            IfSolvedPuzzle(sender, calcuFixForm.IsWin);
+        }
 
         // Side Game -> Wordle
 
