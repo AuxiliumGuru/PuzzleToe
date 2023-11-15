@@ -36,6 +36,7 @@
             // 
             // aboutBtn
             // 
+            aboutBtn.Cursor = Cursors.Hand;
             aboutBtn.Location = new Point(129, 266);
             aboutBtn.Name = "aboutBtn";
             aboutBtn.Size = new Size(167, 51);
@@ -45,6 +46,7 @@
             // 
             // exitBtn
             // 
+            exitBtn.Cursor = Cursors.Hand;
             exitBtn.Location = new Point(129, 336);
             exitBtn.Name = "exitBtn";
             exitBtn.Size = new Size(167, 51);
@@ -54,6 +56,7 @@
             // 
             // startBtn
             // 
+            startBtn.Cursor = Cursors.Hand;
             startBtn.Location = new Point(129, 195);
             startBtn.Name = "startBtn";
             startBtn.Size = new Size(167, 51);

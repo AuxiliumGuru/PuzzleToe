@@ -50,6 +50,7 @@
             // 
             // findBtn
             // 
+            findBtn.Cursor = Cursors.Hand;
             findBtn.Location = new Point(162, 39);
             findBtn.Name = "findBtn";
             findBtn.Size = new Size(85, 43);

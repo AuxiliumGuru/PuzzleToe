@@ -143,7 +143,7 @@ namespace ClickMe
 
         public bool isLoser()
         {
-            if (attempts == 0)
+            if (attempts == 0 && num_winning_tiles > 0)
             {
                 return true;
             }
