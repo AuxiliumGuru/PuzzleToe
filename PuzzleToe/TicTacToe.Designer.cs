@@ -146,6 +146,7 @@
             // 
             newGameBtn.BackColor = Color.LightSteelBlue;
             newGameBtn.BackgroundImageLayout = ImageLayout.None;
+            newGameBtn.Cursor = Cursors.Hand;
             newGameBtn.ForeColor = SystemColors.ButtonHighlight;
             newGameBtn.Location = new Point(126, 341);
             newGameBtn.Name = "newGameBtn";

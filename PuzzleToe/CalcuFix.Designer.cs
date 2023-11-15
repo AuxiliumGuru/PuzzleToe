@@ -70,9 +70,10 @@
             // 
             // confirmBtn
             // 
+            confirmBtn.Cursor = Cursors.Hand;
             confirmBtn.Location = new Point(178, 243);
             confirmBtn.Name = "confirmBtn";
-            confirmBtn.Size = new Size(75, 23);
+            confirmBtn.Size = new Size(75, 29);
             confirmBtn.TabIndex = 3;
             confirmBtn.Text = "Confirm";
             confirmBtn.UseVisualStyleBackColor = true;

@@ -90,13 +90,13 @@ namespace TicTacToe
                 getWordleGame(sender);
             }
 
-            else if (num_tiles_played_x > 2)
+            else if (num_tiles_played_o > 2)
             {
                 getCalcuFixGame(sender);
             }
 
             else
-            { 
+            {
                 getFindMeGame(sender);
             }
         }
@@ -249,6 +249,8 @@ namespace TicTacToe
             tile7.Enabled = true;
             tile8.Enabled = true;
             tile9.Enabled = true;
+
+            newGameBtn.Visible = false;
 
 
 
