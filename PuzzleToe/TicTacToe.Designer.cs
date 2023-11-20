@@ -39,6 +39,7 @@
             tile7 = new Button();
             label1 = new Label();
             newGameBtn = new Button();
+            turnLabel = new Label();
             SuspendLayout();
             // 
             // tile1
@@ -156,6 +157,16 @@
             newGameBtn.UseVisualStyleBackColor = false;
             newGameBtn.Click += newGameBtn_Click;
             // 
+            // turnLabel
+            // 
+            turnLabel.AutoSize = true;
+            turnLabel.Font = new Font("Microsoft JhengHei", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            turnLabel.Location = new Point(137, 345);
+            turnLabel.Name = "turnLabel";
+            turnLabel.Size = new Size(67, 19);
+            turnLabel.TabIndex = 11;
+            turnLabel.Text = "X's Turn";
+            // 
             // TicTactoe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -173,6 +184,7 @@
             Controls.Add(tile3);
             Controls.Add(tile2);
             Controls.Add(tile1);
+            Controls.Add(turnLabel);
             ForeColor = SystemColors.ControlLightLight;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "TicTactoe";
@@ -197,5 +209,6 @@
         private Button tile7;
         private Label label1;
         private Button newGameBtn;
+        private Label turnLabel;
     }
 }

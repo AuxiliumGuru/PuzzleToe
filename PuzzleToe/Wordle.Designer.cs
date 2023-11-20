@@ -606,7 +606,7 @@
             giveUpBtn.UseVisualStyleBackColor = true;
             giveUpBtn.Click += giveUpBtn_Click;
             // 
-            // Form1
+            // Wordle
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -662,7 +662,9 @@
             Controls.Add(pressBtn1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "Form1";
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Wordle";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Wordle";
             Load += Form1_Load;

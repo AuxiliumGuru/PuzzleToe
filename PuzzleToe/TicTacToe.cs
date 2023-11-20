@@ -62,6 +62,7 @@ namespace TicTacToe
 
             num_tiles_played_o = 0;
             num_tiles_played_x = 0;
+            turnLabel.Visible = false;
         }
 
 
@@ -70,6 +71,7 @@ namespace TicTacToe
 
         public void getSideGames(object sender)
         {
+
             if (currentMove == 0)
             {
                 getSideGame_X(sender);
@@ -85,12 +87,12 @@ namespace TicTacToe
 
         public void getSideGame_O(object sender)
         {
-            if (num_tiles_played_o > 5)
+            if (num_tiles_played_o > 3)
             {
                 getWordleGame(sender);
             }
 
-            else if (num_tiles_played_o > 2)
+            else if (num_tiles_played_o > 1)
             {
                 getCalcuFixGame(sender);
             }
@@ -103,12 +105,12 @@ namespace TicTacToe
 
         public void getSideGame_X(object sender)
         {
-            if (num_tiles_played_x > 5)
+            if (num_tiles_played_x > 3)
             {
                 getWordleGame(sender);
             }
 
-            else if (num_tiles_played_x > 2)
+            else if (num_tiles_played_x > 1)
             {
                 getCalcuFixGame(sender);
             }
@@ -163,23 +165,27 @@ namespace TicTacToe
                 Button b = (Button)sender;
                 b.Text = getPiece();
                 getCurrentMove();
+               
                 b.Enabled = false;
 
                 if (isWinner())
                 {
                     MessageBox.Show(getWinnerMessage());
+                    resetBoard();
                 }
                 else if (isDraw())
                 {
                     MessageBox.Show(getDrawMessage());
+                    resetBoard();
                 }
             }
 
             else
             {
                 getCurrentMove();
-
             }
+
+            getCurrentTurnLabel();
         }
 
         // <-- Properties Method -->
@@ -252,11 +258,18 @@ namespace TicTacToe
 
             newGameBtn.Visible = false;
 
-
-
+            turnLabel.Visible = true;
+            getCurrentTurnLabel();
         }
 
+
+
         // <-- Helper Method -->
+
+        public void getCurrentTurnLabel()
+        {
+            turnLabel.Text = $"{getPiece()}'s Turn";
+        }
         private String getPiece()
         {
 
@@ -294,7 +307,6 @@ namespace TicTacToe
 
         private String getDrawMessage()
         {
-            resetBoard();
             return "Draw";
         }
         // Winner Verification
@@ -312,13 +324,15 @@ namespace TicTacToe
         private String getWinnerMessage()
         {
             String winner = verifyCombinationO() ? "O wins" : "X wins";
-            resetBoard();
             return winner;
         }
 
         private void resetBoard()
         {
             newGameBtn_Click(this, EventArgs.Empty);
+            newGameBtn.Visible = true;
+            newGameBtn.Enabled = true;
+            turnLabel.Visible = false;
         }
 
 
