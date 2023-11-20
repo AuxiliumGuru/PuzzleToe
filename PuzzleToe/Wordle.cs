@@ -21,7 +21,7 @@ namespace Wordle
         {
             get { return isWin; }
         }
-        
+
         // Class Attributes
 
         Random random = new Random();
