@@ -34,11 +34,22 @@ namespace BracketQuest
         public void initializeExpressions()
         {
             expression.Add("8-2*3+5");
+            expression.Add("8-2*3+5");
+            expression.Add("10-4*(2+3)");
+            expression.Add("(15-5)+2*1");
+            expression.Add("(7+2)*3-2");
+            expression.Add("12-3*2+4");
         }
 
         public void initializeAnswers()
         {
             answers.Add(7);
+            answers.Add(-8);
+            answers.Add(15);
+            answers.Add(8);
+            answers.Add(9);
+            answers.Add(-6);
+
         }
 
     }

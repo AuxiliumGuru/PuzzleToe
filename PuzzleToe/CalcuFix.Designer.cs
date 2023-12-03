@@ -29,17 +29,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalcuFix));
             equationLabel = new Label();
             inputTxt = new TextBox();
-            label2 = new Label();
             confirmBtn = new Button();
             panel1 = new Panel();
+            helpLink = new LinkLabel();
+            attemptLabel = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // equationLabel
             // 
             equationLabel.AutoSize = true;
+            equationLabel.BackColor = Color.White;
             equationLabel.Dock = DockStyle.Fill;
             equationLabel.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
             equationLabel.Location = new Point(0, 0);
@@ -52,26 +55,16 @@
             // inputTxt
             // 
             inputTxt.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            inputTxt.Location = new Point(87, 173);
+            inputTxt.Location = new Point(102, 167);
             inputTxt.Multiline = true;
             inputTxt.Name = "inputTxt";
             inputTxt.Size = new Size(265, 45);
             inputTxt.TabIndex = 1;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(111, 41);
-            label2.Name = "label2";
-            label2.Size = new Size(209, 21);
-            label2.TabIndex = 2;
-            label2.Text = "Fix the Arithmetic Expression";
-            // 
             // confirmBtn
             // 
             confirmBtn.Cursor = Cursors.Hand;
-            confirmBtn.Location = new Point(178, 243);
+            confirmBtn.Location = new Point(188, 226);
             confirmBtn.Name = "confirmBtn";
             confirmBtn.Size = new Size(75, 29);
             confirmBtn.TabIndex = 3;
@@ -81,23 +74,49 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.White;
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(equationLabel);
-            panel1.Location = new Point(108, 99);
+            panel1.Location = new Point(123, 99);
             panel1.Name = "panel1";
             panel1.Size = new Size(221, 50);
             panel1.TabIndex = 4;
             panel1.Paint += panel1_Paint;
             // 
+            // helpLink
+            // 
+            helpLink.AutoSize = true;
+            helpLink.Location = new Point(339, 25);
+            helpLink.Name = "helpLink";
+            helpLink.Size = new Size(77, 15);
+            helpLink.TabIndex = 5;
+            helpLink.TabStop = true;
+            helpLink.Text = "How To Play?";
+            helpLink.LinkClicked += helpLink_LinkClicked;
+            // 
+            // attemptLabel
+            // 
+            attemptLabel.AutoSize = true;
+            attemptLabel.BackColor = Color.White;
+            attemptLabel.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            attemptLabel.Location = new Point(110, 260);
+            attemptLabel.Name = "attemptLabel";
+            attemptLabel.Size = new Size(241, 25);
+            attemptLabel.TabIndex = 6;
+            attemptLabel.Text = "Number Of Attempts Left: 0";
+            // 
             // CalcuFix
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(445, 331);
+            BackgroundImage = PuzzleToe.Properties.Resources.calcufix1;
+            ClientSize = new Size(459, 331);
+            Controls.Add(attemptLabel);
+            Controls.Add(helpLink);
             Controls.Add(confirmBtn);
-            Controls.Add(label2);
             Controls.Add(inputTxt);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "CalcuFix";
@@ -114,8 +133,9 @@
 
         private Label equationLabel;
         private TextBox inputTxt;
-        private Label label2;
         private Button confirmBtn;
         private Panel panel1;
+        private LinkLabel helpLink;
+        private Label attemptLabel;
     }
 }

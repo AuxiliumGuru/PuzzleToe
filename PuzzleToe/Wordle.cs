@@ -1,3 +1,4 @@
+using PuzzleToe;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -13,6 +14,8 @@ namespace Wordle
             isWin = false;
 
         }
+
+        private HelpForm helpForm;
 
         // API
         private bool isWin;
@@ -35,7 +38,7 @@ namespace Wordle
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            helpLink.BackColor = Color.Transparent;
             // Instantiate FiveLetterWords Class
             words = new FiveLetterWords();
 
@@ -102,6 +105,33 @@ namespace Wordle
         }
 
 
+        private void helpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            helpForm = new HelpForm();
+
+            helpForm.SetHelpText(
+                "Setup:" + Environment.NewLine +
+                "  - The game selects a secret five-letter word at the beginning." + Environment.NewLine +
+                "  - The player has six attempts to guess the correct word." + Environment.NewLine +
+                "Gameplay:" + Environment.NewLine +
+                " 1. Guessing Words:" + Environment.NewLine +
+                "   - On each turn, the player submits a five-letter guess." + Environment.NewLine +
+                "   - The game provides feedback for each guess, indicating which letters are correct and in the correct position (green), which letters are correct but in the wrong position (yellow), and which letters are incorrect (gray or another color)." + Environment.NewLine +
+                " 2. Feedback:" + Environment.NewLine +
+                "   - Green: Correct letter in the correct position." + Environment.NewLine +
+                "   - Yellow: Correct letter in the wrong position." + Environment.NewLine +
+                "   - Gray: Incorrect letter." + Environment.NewLine +
+                " 3. Using Feedback:" + Environment.NewLine +
+                "  - Use the feedback to refine subsequent guesses." + Environment.NewLine +
+                "  - Focus on letters that are in the correct position or correct but in the wrong position." + Environment.NewLine +
+                "Winning:" + Environment.NewLine +
+                "  - The player wins if they correctly guess the word within six attempts." + Environment.NewLine +
+                "Losing:" + Environment.NewLine +
+                "  - The player loses if they are unable to guess the word within six attempts." + Environment.NewLine
+            );
+
+            helpForm.ShowDialog();
+        }
 
         private void getTextButton_Click(object sender, EventArgs e)
         {

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TicTactoe));
             tile1 = new Button();
             tile2 = new Button();
             tile3 = new Button();
@@ -37,15 +38,16 @@
             tile9 = new Button();
             tile8 = new Button();
             tile7 = new Button();
-            label1 = new Label();
             newGameBtn = new Button();
             turnLabel = new Label();
+            backBtn = new Button();
+            helpLink = new LinkLabel();
             SuspendLayout();
             // 
             // tile1
             // 
             tile1.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile1.Location = new Point(43, 74);
+            tile1.Location = new Point(43, 89);
             tile1.Name = "tile1";
             tile1.Size = new Size(70, 63);
             tile1.TabIndex = 0;
@@ -55,7 +57,7 @@
             // tile2
             // 
             tile2.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile2.Location = new Point(133, 74);
+            tile2.Location = new Point(133, 89);
             tile2.Name = "tile2";
             tile2.Size = new Size(70, 63);
             tile2.TabIndex = 1;
@@ -65,7 +67,7 @@
             // tile3
             // 
             tile3.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile3.Location = new Point(224, 74);
+            tile3.Location = new Point(224, 89);
             tile3.Name = "tile3";
             tile3.Size = new Size(70, 63);
             tile3.TabIndex = 2;
@@ -75,7 +77,7 @@
             // tile6
             // 
             tile6.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile6.Location = new Point(224, 162);
+            tile6.Location = new Point(224, 177);
             tile6.Name = "tile6";
             tile6.Size = new Size(70, 63);
             tile6.TabIndex = 5;
@@ -85,7 +87,7 @@
             // tile5
             // 
             tile5.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile5.Location = new Point(133, 162);
+            tile5.Location = new Point(133, 177);
             tile5.Name = "tile5";
             tile5.Size = new Size(70, 63);
             tile5.TabIndex = 4;
@@ -95,7 +97,7 @@
             // tile4
             // 
             tile4.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile4.Location = new Point(43, 162);
+            tile4.Location = new Point(43, 177);
             tile4.Name = "tile4";
             tile4.Size = new Size(70, 63);
             tile4.TabIndex = 3;
@@ -105,7 +107,7 @@
             // tile9
             // 
             tile9.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile9.Location = new Point(224, 255);
+            tile9.Location = new Point(224, 270);
             tile9.Name = "tile9";
             tile9.Size = new Size(70, 63);
             tile9.TabIndex = 8;
@@ -115,7 +117,7 @@
             // tile8
             // 
             tile8.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile8.Location = new Point(133, 255);
+            tile8.Location = new Point(133, 270);
             tile8.Name = "tile8";
             tile8.Size = new Size(70, 63);
             tile8.TabIndex = 7;
@@ -125,33 +127,23 @@
             // tile7
             // 
             tile7.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            tile7.Location = new Point(43, 255);
+            tile7.Location = new Point(43, 270);
             tile7.Name = "tile7";
             tile7.Size = new Size(70, 63);
             tile7.TabIndex = 6;
             tile7.UseVisualStyleBackColor = true;
             tile7.Click += tile7Btn_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Impact", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(109, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(119, 29);
-            label1.TabIndex = 9;
-            label1.Text = "Tic Tac Toe";
-            // 
             // newGameBtn
             // 
-            newGameBtn.BackColor = Color.LightSteelBlue;
+            newGameBtn.BackColor = SystemColors.ButtonFace;
             newGameBtn.BackgroundImageLayout = ImageLayout.None;
             newGameBtn.Cursor = Cursors.Hand;
-            newGameBtn.ForeColor = SystemColors.ButtonHighlight;
-            newGameBtn.Location = new Point(126, 341);
+            newGameBtn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            newGameBtn.ForeColor = Color.CornflowerBlue;
+            newGameBtn.Location = new Point(116, 339);
             newGameBtn.Name = "newGameBtn";
-            newGameBtn.Size = new Size(85, 29);
+            newGameBtn.Size = new Size(104, 38);
             newGameBtn.TabIndex = 10;
             newGameBtn.Text = "Start Game";
             newGameBtn.UseVisualStyleBackColor = false;
@@ -160,21 +152,49 @@
             // turnLabel
             // 
             turnLabel.AutoSize = true;
-            turnLabel.Font = new Font("Microsoft JhengHei", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            turnLabel.Location = new Point(137, 345);
+            turnLabel.BackColor = Color.White;
+            turnLabel.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            turnLabel.ForeColor = SystemColors.ActiveCaption;
+            turnLabel.Location = new Point(129, 348);
             turnLabel.Name = "turnLabel";
-            turnLabel.Size = new Size(67, 19);
+            turnLabel.Size = new Size(79, 23);
             turnLabel.TabIndex = 11;
             turnLabel.Text = "X's Turn";
+            // 
+            // backBtn
+            // 
+            backBtn.BackColor = SystemColors.ActiveCaption;
+            backBtn.BackgroundImage = PuzzleToe.Properties.Resources.back;
+            backBtn.ForeColor = SystemColors.Menu;
+            backBtn.Location = new Point(22, 17);
+            backBtn.Name = "backBtn";
+            backBtn.Size = new Size(40, 40);
+            backBtn.TabIndex = 12;
+            backBtn.Text = "<";
+            backBtn.UseVisualStyleBackColor = false;
+            backBtn.Click += backBtn_Click;
+            // 
+            // helpLink
+            // 
+            helpLink.AutoSize = true;
+            helpLink.Location = new Point(243, 18);
+            helpLink.Name = "helpLink";
+            helpLink.Size = new Size(77, 15);
+            helpLink.TabIndex = 13;
+            helpLink.TabStop = true;
+            helpLink.Text = "How To Play?";
+            helpLink.LinkClicked += helpLink_LinkClicked;
             // 
             // TicTactoe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = SystemColors.ControlLightLight;
+            BackgroundImage = PuzzleToe.Properties.Resources.tictactoe;
             ClientSize = new Size(334, 397);
+            Controls.Add(helpLink);
+            Controls.Add(backBtn);
             Controls.Add(newGameBtn);
-            Controls.Add(label1);
             Controls.Add(tile9);
             Controls.Add(tile8);
             Controls.Add(tile7);
@@ -187,6 +207,7 @@
             Controls.Add(turnLabel);
             ForeColor = SystemColors.ControlLightLight;
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "TicTactoe";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TicTacToe";
@@ -207,8 +228,9 @@
         private Button tile9;
         private Button tile8;
         private Button tile7;
-        private Label label1;
         private Button newGameBtn;
         private Label turnLabel;
+        private Button backBtn;
+        private LinkLabel helpLink;
     }
 }
