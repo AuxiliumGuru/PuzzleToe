@@ -78,12 +78,13 @@
             btn17 = new Button();
             btn16 = new Button();
             giveUpBtn = new Button();
+            helpLink = new LinkLabel();
             SuspendLayout();
             // 
             // pressBtn1
             // 
             pressBtn1.Cursor = Cursors.Hand;
-            pressBtn1.Location = new Point(87, 324);
+            pressBtn1.Location = new Point(115, 370);
             pressBtn1.Name = "pressBtn1";
             pressBtn1.Size = new Size(38, 45);
             pressBtn1.TabIndex = 0;
@@ -94,7 +95,7 @@
             // pressBtn2
             // 
             pressBtn2.Cursor = Cursors.Hand;
-            pressBtn2.Location = new Point(131, 324);
+            pressBtn2.Location = new Point(159, 370);
             pressBtn2.Name = "pressBtn2";
             pressBtn2.Size = new Size(38, 45);
             pressBtn2.TabIndex = 1;
@@ -105,7 +106,7 @@
             // pressBtn4
             // 
             pressBtn4.Cursor = Cursors.Hand;
-            pressBtn4.Location = new Point(219, 324);
+            pressBtn4.Location = new Point(247, 370);
             pressBtn4.Name = "pressBtn4";
             pressBtn4.Size = new Size(38, 45);
             pressBtn4.TabIndex = 3;
@@ -116,7 +117,7 @@
             // pressBtn3
             // 
             pressBtn3.Cursor = Cursors.Hand;
-            pressBtn3.Location = new Point(175, 324);
+            pressBtn3.Location = new Point(203, 370);
             pressBtn3.Name = "pressBtn3";
             pressBtn3.Size = new Size(38, 45);
             pressBtn3.TabIndex = 2;
@@ -127,7 +128,7 @@
             // pressBtn8
             // 
             pressBtn8.Cursor = Cursors.Hand;
-            pressBtn8.Location = new Point(398, 324);
+            pressBtn8.Location = new Point(426, 370);
             pressBtn8.Name = "pressBtn8";
             pressBtn8.Size = new Size(38, 45);
             pressBtn8.TabIndex = 7;
@@ -138,7 +139,7 @@
             // pressBtn7
             // 
             pressBtn7.Cursor = Cursors.Hand;
-            pressBtn7.Location = new Point(354, 324);
+            pressBtn7.Location = new Point(382, 370);
             pressBtn7.Name = "pressBtn7";
             pressBtn7.Size = new Size(38, 45);
             pressBtn7.TabIndex = 6;
@@ -149,7 +150,7 @@
             // pressBtn6
             // 
             pressBtn6.Cursor = Cursors.Hand;
-            pressBtn6.Location = new Point(310, 324);
+            pressBtn6.Location = new Point(338, 370);
             pressBtn6.Name = "pressBtn6";
             pressBtn6.Size = new Size(38, 45);
             pressBtn6.TabIndex = 5;
@@ -160,7 +161,7 @@
             // pressBtn5
             // 
             pressBtn5.Cursor = Cursors.Hand;
-            pressBtn5.Location = new Point(266, 324);
+            pressBtn5.Location = new Point(294, 370);
             pressBtn5.Name = "pressBtn5";
             pressBtn5.Size = new Size(38, 45);
             pressBtn5.TabIndex = 4;
@@ -171,7 +172,7 @@
             // pressBtn10
             // 
             pressBtn10.Cursor = Cursors.Hand;
-            pressBtn10.Location = new Point(488, 324);
+            pressBtn10.Location = new Point(516, 370);
             pressBtn10.Name = "pressBtn10";
             pressBtn10.Size = new Size(38, 45);
             pressBtn10.TabIndex = 9;
@@ -182,7 +183,7 @@
             // pressBtn9
             // 
             pressBtn9.Cursor = Cursors.Hand;
-            pressBtn9.Location = new Point(444, 324);
+            pressBtn9.Location = new Point(472, 370);
             pressBtn9.Name = "pressBtn9";
             pressBtn9.Size = new Size(38, 45);
             pressBtn9.TabIndex = 8;
@@ -193,7 +194,7 @@
             // pressBtn19
             // 
             pressBtn19.Cursor = Cursors.Hand;
-            pressBtn19.Location = new Point(467, 379);
+            pressBtn19.Location = new Point(495, 425);
             pressBtn19.Name = "pressBtn19";
             pressBtn19.Size = new Size(38, 45);
             pressBtn19.TabIndex = 18;
@@ -204,7 +205,7 @@
             // pressBtn18
             // 
             pressBtn18.Cursor = Cursors.Hand;
-            pressBtn18.Location = new Point(421, 379);
+            pressBtn18.Location = new Point(449, 425);
             pressBtn18.Name = "pressBtn18";
             pressBtn18.Size = new Size(38, 45);
             pressBtn18.TabIndex = 17;
@@ -215,7 +216,7 @@
             // pressBtn17
             // 
             pressBtn17.Cursor = Cursors.Hand;
-            pressBtn17.Location = new Point(377, 379);
+            pressBtn17.Location = new Point(405, 425);
             pressBtn17.Name = "pressBtn17";
             pressBtn17.Size = new Size(38, 45);
             pressBtn17.TabIndex = 16;
@@ -226,7 +227,7 @@
             // pressBtn16
             // 
             pressBtn16.Cursor = Cursors.Hand;
-            pressBtn16.Location = new Point(333, 379);
+            pressBtn16.Location = new Point(361, 425);
             pressBtn16.Name = "pressBtn16";
             pressBtn16.Size = new Size(38, 45);
             pressBtn16.TabIndex = 15;
@@ -237,7 +238,7 @@
             // pressBtn15
             // 
             pressBtn15.Cursor = Cursors.Hand;
-            pressBtn15.Location = new Point(289, 379);
+            pressBtn15.Location = new Point(317, 425);
             pressBtn15.Name = "pressBtn15";
             pressBtn15.Size = new Size(38, 45);
             pressBtn15.TabIndex = 14;
@@ -248,7 +249,7 @@
             // pressBtn14
             // 
             pressBtn14.Cursor = Cursors.Hand;
-            pressBtn14.Location = new Point(242, 379);
+            pressBtn14.Location = new Point(270, 425);
             pressBtn14.Name = "pressBtn14";
             pressBtn14.Size = new Size(38, 45);
             pressBtn14.TabIndex = 13;
@@ -259,7 +260,7 @@
             // pressBtn13
             // 
             pressBtn13.Cursor = Cursors.Hand;
-            pressBtn13.Location = new Point(198, 379);
+            pressBtn13.Location = new Point(226, 425);
             pressBtn13.Name = "pressBtn13";
             pressBtn13.Size = new Size(38, 45);
             pressBtn13.TabIndex = 12;
@@ -270,7 +271,7 @@
             // pressBtn12
             // 
             pressBtn12.Cursor = Cursors.Hand;
-            pressBtn12.Location = new Point(154, 379);
+            pressBtn12.Location = new Point(182, 425);
             pressBtn12.Name = "pressBtn12";
             pressBtn12.Size = new Size(38, 45);
             pressBtn12.TabIndex = 11;
@@ -281,7 +282,7 @@
             // pressBtn11
             // 
             pressBtn11.Cursor = Cursors.Hand;
-            pressBtn11.Location = new Point(110, 379);
+            pressBtn11.Location = new Point(138, 425);
             pressBtn11.Name = "pressBtn11";
             pressBtn11.Size = new Size(38, 45);
             pressBtn11.TabIndex = 10;
@@ -292,7 +293,7 @@
             // pressBtn26
             // 
             pressBtn26.Cursor = Cursors.Hand;
-            pressBtn26.Location = new Point(440, 433);
+            pressBtn26.Location = new Point(468, 479);
             pressBtn26.Name = "pressBtn26";
             pressBtn26.Size = new Size(38, 45);
             pressBtn26.TabIndex = 26;
@@ -303,7 +304,7 @@
             // pressBtn25
             // 
             pressBtn25.Cursor = Cursors.Hand;
-            pressBtn25.Location = new Point(396, 433);
+            pressBtn25.Location = new Point(424, 479);
             pressBtn25.Name = "pressBtn25";
             pressBtn25.Size = new Size(38, 45);
             pressBtn25.TabIndex = 25;
@@ -314,7 +315,7 @@
             // pressBtn24
             // 
             pressBtn24.Cursor = Cursors.Hand;
-            pressBtn24.Location = new Point(352, 433);
+            pressBtn24.Location = new Point(380, 479);
             pressBtn24.Name = "pressBtn24";
             pressBtn24.Size = new Size(38, 45);
             pressBtn24.TabIndex = 24;
@@ -325,7 +326,7 @@
             // pressBtn23
             // 
             pressBtn23.Cursor = Cursors.Hand;
-            pressBtn23.Location = new Point(305, 433);
+            pressBtn23.Location = new Point(333, 479);
             pressBtn23.Name = "pressBtn23";
             pressBtn23.Size = new Size(38, 45);
             pressBtn23.TabIndex = 23;
@@ -336,7 +337,7 @@
             // pressBtn22
             // 
             pressBtn22.Cursor = Cursors.Hand;
-            pressBtn22.Location = new Point(261, 433);
+            pressBtn22.Location = new Point(289, 479);
             pressBtn22.Name = "pressBtn22";
             pressBtn22.Size = new Size(38, 45);
             pressBtn22.TabIndex = 22;
@@ -347,7 +348,7 @@
             // pressBtn21
             // 
             pressBtn21.Cursor = Cursors.Hand;
-            pressBtn21.Location = new Point(217, 433);
+            pressBtn21.Location = new Point(245, 479);
             pressBtn21.Name = "pressBtn21";
             pressBtn21.Size = new Size(38, 45);
             pressBtn21.TabIndex = 21;
@@ -358,7 +359,7 @@
             // pressBtn20
             // 
             pressBtn20.Cursor = Cursors.Hand;
-            pressBtn20.Location = new Point(173, 433);
+            pressBtn20.Location = new Point(201, 479);
             pressBtn20.Name = "pressBtn20";
             pressBtn20.Size = new Size(38, 45);
             pressBtn20.TabIndex = 20;
@@ -369,7 +370,7 @@
             // bckSpace
             // 
             bckSpace.Cursor = Cursors.Hand;
-            bckSpace.Location = new Point(484, 433);
+            bckSpace.Location = new Point(512, 479);
             bckSpace.Name = "bckSpace";
             bckSpace.Size = new Size(50, 45);
             bckSpace.TabIndex = 27;
@@ -380,7 +381,7 @@
             // enterBtn
             // 
             enterBtn.Cursor = Cursors.Hand;
-            enterBtn.Location = new Point(94, 433);
+            enterBtn.Location = new Point(122, 479);
             enterBtn.Name = "enterBtn";
             enterBtn.Size = new Size(70, 45);
             enterBtn.TabIndex = 28;
@@ -394,7 +395,7 @@
             btn1.Enabled = false;
             btn1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             btn1.ForeColor = SystemColors.ControlText;
-            btn1.Location = new Point(159, 27);
+            btn1.Location = new Point(175, 83);
             btn1.Name = "btn1";
             btn1.Size = new Size(57, 65);
             btn1.TabIndex = 29;
@@ -405,7 +406,7 @@
             // 
             btn2.Enabled = false;
             btn2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn2.Location = new Point(221, 27);
+            btn2.Location = new Point(237, 83);
             btn2.Name = "btn2";
             btn2.Size = new Size(57, 65);
             btn2.TabIndex = 30;
@@ -416,7 +417,7 @@
             // 
             btn4.Enabled = false;
             btn4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn4.Location = new Point(342, 27);
+            btn4.Location = new Point(358, 83);
             btn4.Name = "btn4";
             btn4.Size = new Size(57, 65);
             btn4.TabIndex = 32;
@@ -427,7 +428,7 @@
             // 
             btn3.Enabled = false;
             btn3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn3.Location = new Point(282, 27);
+            btn3.Location = new Point(298, 83);
             btn3.Name = "btn3";
             btn3.Size = new Size(57, 65);
             btn3.TabIndex = 31;
@@ -438,7 +439,7 @@
             // 
             btn5.Enabled = false;
             btn5.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn5.Location = new Point(402, 27);
+            btn5.Location = new Point(418, 83);
             btn5.Name = "btn5";
             btn5.Size = new Size(57, 65);
             btn5.TabIndex = 34;
@@ -449,7 +450,7 @@
             // 
             btn10.Enabled = false;
             btn10.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn10.Location = new Point(402, 99);
+            btn10.Location = new Point(418, 155);
             btn10.Name = "btn10";
             btn10.Size = new Size(57, 65);
             btn10.TabIndex = 39;
@@ -459,7 +460,7 @@
             // 
             btn9.Enabled = false;
             btn9.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn9.Location = new Point(342, 99);
+            btn9.Location = new Point(358, 155);
             btn9.Name = "btn9";
             btn9.Size = new Size(57, 65);
             btn9.TabIndex = 38;
@@ -469,7 +470,7 @@
             // 
             btn8.Enabled = false;
             btn8.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn8.Location = new Point(282, 99);
+            btn8.Location = new Point(298, 155);
             btn8.Name = "btn8";
             btn8.Size = new Size(57, 65);
             btn8.TabIndex = 37;
@@ -479,7 +480,7 @@
             // 
             btn7.Enabled = false;
             btn7.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn7.Location = new Point(221, 99);
+            btn7.Location = new Point(237, 155);
             btn7.Name = "btn7";
             btn7.Size = new Size(57, 65);
             btn7.TabIndex = 36;
@@ -489,7 +490,7 @@
             // 
             btn6.Enabled = false;
             btn6.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn6.Location = new Point(159, 99);
+            btn6.Location = new Point(175, 155);
             btn6.Name = "btn6";
             btn6.Size = new Size(57, 65);
             btn6.TabIndex = 35;
@@ -499,7 +500,7 @@
             // 
             btn15.Enabled = false;
             btn15.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn15.Location = new Point(404, 172);
+            btn15.Location = new Point(420, 228);
             btn15.Name = "btn15";
             btn15.Size = new Size(57, 65);
             btn15.TabIndex = 44;
@@ -509,7 +510,7 @@
             // 
             btn14.Enabled = false;
             btn14.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn14.Location = new Point(343, 172);
+            btn14.Location = new Point(359, 228);
             btn14.Name = "btn14";
             btn14.Size = new Size(57, 65);
             btn14.TabIndex = 43;
@@ -519,7 +520,7 @@
             // 
             btn13.Enabled = false;
             btn13.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn13.Location = new Point(282, 172);
+            btn13.Location = new Point(298, 228);
             btn13.Name = "btn13";
             btn13.Size = new Size(57, 65);
             btn13.TabIndex = 42;
@@ -529,7 +530,7 @@
             // 
             btn12.Enabled = false;
             btn12.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn12.Location = new Point(221, 172);
+            btn12.Location = new Point(237, 228);
             btn12.Name = "btn12";
             btn12.Size = new Size(57, 65);
             btn12.TabIndex = 41;
@@ -539,7 +540,7 @@
             // 
             btn11.Enabled = false;
             btn11.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn11.Location = new Point(159, 172);
+            btn11.Location = new Point(175, 228);
             btn11.Name = "btn11";
             btn11.Size = new Size(57, 65);
             btn11.TabIndex = 40;
@@ -549,7 +550,7 @@
             // 
             btn20.Enabled = false;
             btn20.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn20.Location = new Point(404, 243);
+            btn20.Location = new Point(420, 299);
             btn20.Name = "btn20";
             btn20.Size = new Size(57, 65);
             btn20.TabIndex = 49;
@@ -559,7 +560,7 @@
             // 
             btn19.Enabled = false;
             btn19.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn19.Location = new Point(343, 243);
+            btn19.Location = new Point(359, 299);
             btn19.Name = "btn19";
             btn19.Size = new Size(57, 65);
             btn19.TabIndex = 48;
@@ -569,7 +570,7 @@
             // 
             btn18.Enabled = false;
             btn18.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn18.Location = new Point(282, 243);
+            btn18.Location = new Point(298, 299);
             btn18.Name = "btn18";
             btn18.Size = new Size(57, 65);
             btn18.TabIndex = 47;
@@ -579,7 +580,7 @@
             // 
             btn17.Enabled = false;
             btn17.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn17.Location = new Point(221, 243);
+            btn17.Location = new Point(237, 299);
             btn17.Name = "btn17";
             btn17.Size = new Size(57, 65);
             btn17.TabIndex = 46;
@@ -589,7 +590,7 @@
             // 
             btn16.Enabled = false;
             btn16.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn16.Location = new Point(159, 243);
+            btn16.Location = new Point(175, 299);
             btn16.Name = "btn16";
             btn16.Size = new Size(57, 65);
             btn16.TabIndex = 45;
@@ -598,7 +599,7 @@
             // giveUpBtn
             // 
             giveUpBtn.Cursor = Cursors.Hand;
-            giveUpBtn.Location = new Point(484, 285);
+            giveUpBtn.Location = new Point(484, 333);
             giveUpBtn.Name = "giveUpBtn";
             giveUpBtn.Size = new Size(75, 23);
             giveUpBtn.TabIndex = 50;
@@ -606,11 +607,26 @@
             giveUpBtn.UseVisualStyleBackColor = true;
             giveUpBtn.Click += giveUpBtn_Click;
             // 
+            // helpLink
+            // 
+            helpLink.AutoSize = true;
+            helpLink.BackColor = Color.White;
+            helpLink.DisabledLinkColor = Color.White;
+            helpLink.Location = new Point(519, 27);
+            helpLink.Name = "helpLink";
+            helpLink.Size = new Size(77, 15);
+            helpLink.TabIndex = 51;
+            helpLink.TabStop = true;
+            helpLink.Text = "How To Play?";
+            helpLink.LinkClicked += helpLink_LinkClicked;
+            // 
             // Wordle
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(637, 501);
+            BackgroundImage = PuzzleToe.Properties.Resources.wordle;
+            ClientSize = new Size(653, 561);
+            Controls.Add(helpLink);
             Controls.Add(giveUpBtn);
             Controls.Add(btn20);
             Controls.Add(btn19);
@@ -669,6 +685,7 @@
             Text = "Wordle";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -722,5 +739,6 @@
         private Button btn17;
         private Button btn16;
         private Button giveUpBtn;
+        private LinkLabel helpLink;
     }
 }

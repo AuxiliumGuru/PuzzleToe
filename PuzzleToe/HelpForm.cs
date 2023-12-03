@@ -8,24 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClickMe
+namespace PuzzleToe
 {
-    public partial class StageForm : Form
+    public partial class HelpForm : Form
     {
-        public StageForm()
+        public HelpForm()
         {
             InitializeComponent();
         }
 
-        public void setPic(Image image)
-        {
-            picBox.Image = image;
-
-        }
-
-        private void closeBtn_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        public void SetHelpText(String text)
+        {
+            helpTxt.AppendText(text);
+        }
+
+
     }
 }

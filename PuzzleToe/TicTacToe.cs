@@ -1,6 +1,7 @@
 
 
 using BracketQuest;
+using PuzzleToe;
 using System;
 using System.Security.Cryptography.X509Certificates;
 
@@ -13,8 +14,8 @@ namespace TicTacToe
             InitializeComponent();
             InitializeTileArray();
         }
-
-
+        private HelpForm helpForm;
+        private PuzzleToe.PuzzleToe puzzleToeForm;
         private int num_tiles_played_o;
         private int num_tiles_played_x;
 
@@ -49,7 +50,8 @@ namespace TicTacToe
 
         private void tictactoe_Load(object sender, EventArgs e)
         {
-
+            helpLink.BackColor = Color.Transparent;
+            turnLabel.BackColor = Color.Transparent;
             // Adding all side games to the sideGameForms list
             sideGameForms.Add(findMeForm);
             sideGameForms.Add(wordleForm);
@@ -165,7 +167,7 @@ namespace TicTacToe
                 Button b = (Button)sender;
                 b.Text = getPiece();
                 getCurrentMove();
-               
+
                 b.Enabled = false;
 
                 if (isWinner())
@@ -262,6 +264,39 @@ namespace TicTacToe
             getCurrentTurnLabel();
         }
 
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            puzzleToeForm = new PuzzleToe.PuzzleToe();
+
+            DialogResult result = MessageBox.Show("Are you sure you want to proceed to the main menu?",
+                "Confirmation!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                puzzleToeForm.Show();
+                this.Hide();
+            }
+
+
+        }
+
+        private void helpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            helpForm = new HelpForm();
+
+            helpForm.SetHelpText(
+                "This game is like the classic game TicTacToe but with a twist." + Environment.NewLine +
+                "- Every placing of X's and O's has a side puzzle to win" + Environment.NewLine +
+                "- If you did not complete the side puzzle, you will lose your turn" + Environment.NewLine +
+                "- As more tiles are placed within the grid, the side puzzle gets harder" + Environment.NewLine +
+                "- The Following are size puzzle based on the number of X's or O's placed:" + Environment.NewLine +
+                "\t1. Find Me (0 - 1 tiles)" + Environment.NewLine +
+                "\t2. CalcuFix (2 - 3 tiles)" + Environment.NewLine +
+                "\t3. Wordle (> 4 tiles)" + Environment.NewLine
+            );
+
+            helpForm.ShowDialog();
+        }
 
 
         // <-- Helper Method -->
@@ -400,6 +435,7 @@ namespace TicTacToe
                (tile3.Text.Equals("X") && tile5.Text.Equals("X") && tile7.Text.Equals("X"))
                );
         }
+
 
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace ClickMe
+﻿namespace PuzzleToe
 {
-    partial class StageForm
+    partial class About
     {
         /// <summary>
         /// Required designer variable.
@@ -28,51 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            picBox = new PictureBox();
+            label1 = new Label();
+            aboutTxt = new TextBox();
             closeBtn = new Button();
-            ((System.ComponentModel.ISupportInitialize)picBox).BeginInit();
             SuspendLayout();
             // 
-            // picBox
+            // label1
             // 
-            picBox.Location = new Point(43, 31);
-            picBox.Name = "picBox";
-            picBox.Size = new Size(143, 105);
-            picBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            picBox.TabIndex = 0;
-            picBox.TabStop = false;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(125, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 30);
+            label1.TabIndex = 1;
+            label1.Text = "About";
+            // 
+            // aboutTxt
+            // 
+            aboutTxt.Location = new Point(39, 56);
+            aboutTxt.Multiline = true;
+            aboutTxt.Name = "aboutTxt";
+            aboutTxt.ReadOnly = true;
+            aboutTxt.ScrollBars = ScrollBars.Vertical;
+            aboutTxt.Size = new Size(259, 284);
+            aboutTxt.TabIndex = 2;
             // 
             // closeBtn
             // 
-            closeBtn.Location = new Point(76, 157);
+            closeBtn.Location = new Point(125, 358);
             closeBtn.Name = "closeBtn";
             closeBtn.Size = new Size(75, 23);
-            closeBtn.TabIndex = 1;
+            closeBtn.TabIndex = 3;
             closeBtn.Text = "Close";
             closeBtn.UseVisualStyleBackColor = true;
             closeBtn.Click += closeBtn_Click;
             // 
-            // StageForm
+            // About
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
-            ClientSize = new Size(232, 202);
+            ClientSize = new Size(335, 404);
             Controls.Add(closeBtn);
-            Controls.Add(picBox);
+            Controls.Add(aboutTxt);
+            Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "StageForm";
+            Name = "About";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "StageForm";
-            ((System.ComponentModel.ISupportInitialize)picBox).EndInit();
+            Text = "About";
+            Load += About_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox picBox;
+        private Label label1;
+        private TextBox aboutTxt;
         private Button closeBtn;
     }
 }

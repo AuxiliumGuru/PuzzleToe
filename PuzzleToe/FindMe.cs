@@ -1,3 +1,4 @@
+using PuzzleToe;
 using System.Security.Cryptography;
 using System.Xml;
 
@@ -9,6 +10,9 @@ namespace ClickMe
         {
             InitializeComponent();
         }
+
+        HelpForm helpForm;
+
         Random random = new Random();
 
         Stage stage = new Stage();
@@ -53,15 +57,6 @@ namespace ClickMe
             btnArray[15] = btn16;
 
 
-            stages.Add(new int[16]
-            {
-                0, 0, 0, 0,
-                0, 0, 1, 0,
-                0, 1, 1, 0,
-                0, 0, 1, 0
-            });
-
-
 
             attemptLbl.Text = attemptLbl.Text + attempts.ToString();
 
@@ -81,6 +76,7 @@ namespace ClickMe
         {
 
             Button b = (Button)sender;
+            b.BackgroundImage = null;
             int currButton = Convert.ToInt32(b.Name[3..]);
             //bool isTrue = false;
 
@@ -168,6 +164,39 @@ namespace ClickMe
 
         }
 
+        private void helpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            helpForm = new HelpForm();
 
+            helpForm.SetHelpText
+                (
+                "The objective of this game is to find the pattern hidden within the tiles. \n" + Environment.NewLine
+                );
+            helpForm.SetHelpText
+                (
+                " 1. Click the \"eye\" button to know which pattern to find. " + Environment.NewLine
+                );
+            helpForm.SetHelpText
+                (
+                " 2. Click the tiles to reveal a piece of the pattern" + Environment.NewLine
+
+                );
+            helpForm.SetHelpText
+                (
+                "\t 0 - incorrect position" + Environment.NewLine
+
+                );
+            helpForm.SetHelpText
+                (
+                "\t 1 - correct position" + Environment.NewLine
+
+                );
+            helpForm.SetHelpText
+                (
+                " 3. You only have 7 attempts to find the pattern and complete the game" + Environment.NewLine
+                );
+
+            helpForm.ShowDialog();
+        }
     }
 }

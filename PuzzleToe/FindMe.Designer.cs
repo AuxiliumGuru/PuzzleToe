@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FindMe));
             findBtn = new Button();
             btn1 = new Button();
             btn5 = new Button();
@@ -46,22 +47,24 @@
             btn8 = new Button();
             btn4 = new Button();
             attemptLbl = new Label();
+            helpLink = new LinkLabel();
             SuspendLayout();
             // 
             // findBtn
             // 
+            findBtn.BackgroundImage = PuzzleToe.Properties.Resources.reveal;
             findBtn.Cursor = Cursors.Hand;
-            findBtn.Location = new Point(162, 39);
+            findBtn.Location = new Point(166, 88);
             findBtn.Name = "findBtn";
             findBtn.Size = new Size(85, 43);
             findBtn.TabIndex = 0;
-            findBtn.Text = "Click Me To Find Me";
             findBtn.UseVisualStyleBackColor = true;
             findBtn.Click += findBtn_Click;
             // 
             // btn1
             // 
-            btn1.Location = new Point(42, 112);
+            btn1.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn1.Location = new Point(46, 140);
             btn1.Name = "btn1";
             btn1.Size = new Size(75, 64);
             btn1.TabIndex = 1;
@@ -71,7 +74,8 @@
             // 
             // btn5
             // 
-            btn5.Location = new Point(42, 184);
+            btn5.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn5.Location = new Point(46, 212);
             btn5.Name = "btn5";
             btn5.Size = new Size(75, 64);
             btn5.TabIndex = 2;
@@ -81,7 +85,8 @@
             // 
             // btn13
             // 
-            btn13.Location = new Point(42, 328);
+            btn13.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn13.Location = new Point(46, 356);
             btn13.Name = "btn13";
             btn13.Size = new Size(75, 64);
             btn13.TabIndex = 4;
@@ -91,7 +96,8 @@
             // 
             // btn9
             // 
-            btn9.Location = new Point(42, 256);
+            btn9.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn9.Location = new Point(46, 284);
             btn9.Name = "btn9";
             btn9.Size = new Size(75, 64);
             btn9.TabIndex = 3;
@@ -101,7 +107,8 @@
             // 
             // btn14
             // 
-            btn14.Location = new Point(130, 327);
+            btn14.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn14.Location = new Point(134, 355);
             btn14.Name = "btn14";
             btn14.Size = new Size(75, 64);
             btn14.TabIndex = 8;
@@ -111,7 +118,8 @@
             // 
             // btn10
             // 
-            btn10.Location = new Point(130, 255);
+            btn10.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn10.Location = new Point(134, 283);
             btn10.Name = "btn10";
             btn10.Size = new Size(75, 64);
             btn10.TabIndex = 7;
@@ -121,7 +129,8 @@
             // 
             // btn6
             // 
-            btn6.Location = new Point(130, 183);
+            btn6.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn6.Location = new Point(134, 211);
             btn6.Name = "btn6";
             btn6.Size = new Size(75, 64);
             btn6.TabIndex = 6;
@@ -131,7 +140,8 @@
             // 
             // btn2
             // 
-            btn2.Location = new Point(130, 111);
+            btn2.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn2.Location = new Point(134, 139);
             btn2.Name = "btn2";
             btn2.Size = new Size(75, 64);
             btn2.TabIndex = 5;
@@ -141,7 +151,8 @@
             // 
             // btn15
             // 
-            btn15.Location = new Point(216, 328);
+            btn15.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn15.Location = new Point(220, 356);
             btn15.Name = "btn15";
             btn15.Size = new Size(75, 64);
             btn15.TabIndex = 12;
@@ -151,7 +162,8 @@
             // 
             // btn11
             // 
-            btn11.Location = new Point(216, 256);
+            btn11.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn11.Location = new Point(220, 284);
             btn11.Name = "btn11";
             btn11.Size = new Size(75, 64);
             btn11.TabIndex = 11;
@@ -161,7 +173,8 @@
             // 
             // btn7
             // 
-            btn7.Location = new Point(216, 184);
+            btn7.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn7.Location = new Point(220, 212);
             btn7.Name = "btn7";
             btn7.Size = new Size(75, 64);
             btn7.TabIndex = 10;
@@ -171,7 +184,8 @@
             // 
             // btn3
             // 
-            btn3.Location = new Point(216, 112);
+            btn3.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn3.Location = new Point(220, 140);
             btn3.Name = "btn3";
             btn3.Size = new Size(75, 64);
             btn3.TabIndex = 9;
@@ -181,7 +195,8 @@
             // 
             // btn16
             // 
-            btn16.Location = new Point(303, 327);
+            btn16.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn16.Location = new Point(307, 355);
             btn16.Name = "btn16";
             btn16.Size = new Size(75, 64);
             btn16.TabIndex = 16;
@@ -191,7 +206,8 @@
             // 
             // btn12
             // 
-            btn12.Location = new Point(303, 255);
+            btn12.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn12.Location = new Point(307, 283);
             btn12.Name = "btn12";
             btn12.Size = new Size(75, 64);
             btn12.TabIndex = 15;
@@ -201,7 +217,8 @@
             // 
             // btn8
             // 
-            btn8.Location = new Point(303, 183);
+            btn8.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn8.Location = new Point(307, 211);
             btn8.Name = "btn8";
             btn8.Size = new Size(75, 64);
             btn8.TabIndex = 14;
@@ -211,7 +228,8 @@
             // 
             // btn4
             // 
-            btn4.Location = new Point(303, 111);
+            btn4.BackgroundImage = PuzzleToe.Properties.Resources.FindMeTile;
+            btn4.Location = new Point(307, 139);
             btn4.Name = "btn4";
             btn4.Size = new Size(75, 64);
             btn4.TabIndex = 13;
@@ -223,17 +241,31 @@
             // 
             attemptLbl.AutoSize = true;
             attemptLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            attemptLbl.Location = new Point(119, 418);
+            attemptLbl.Location = new Point(130, 435);
             attemptLbl.Name = "attemptLbl";
             attemptLbl.Size = new Size(157, 20);
             attemptLbl.TabIndex = 17;
             attemptLbl.Text = "Number of Attempts: ";
             // 
+            // helpLink
+            // 
+            helpLink.AutoSize = true;
+            helpLink.Location = new Point(320, 21);
+            helpLink.Name = "helpLink";
+            helpLink.Size = new Size(76, 15);
+            helpLink.TabIndex = 18;
+            helpLink.TabStop = true;
+            helpLink.Text = "How to Play?";
+            helpLink.LinkClicked += helpLink_LinkClicked;
+            // 
             // FindMe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(416, 460);
+            BackColor = Color.White;
+            BackgroundImage = PuzzleToe.Properties.Resources.findme;
+            ClientSize = new Size(421, 487);
+            Controls.Add(helpLink);
             Controls.Add(attemptLbl);
             Controls.Add(btn16);
             Controls.Add(btn12);
@@ -253,6 +285,7 @@
             Controls.Add(btn1);
             Controls.Add(findBtn);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FindMe";
@@ -283,5 +316,6 @@
         private Button btn8;
         private Button btn4;
         private Label attemptLbl;
+        private LinkLabel helpLink;
     }
 }

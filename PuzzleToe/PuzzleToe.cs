@@ -8,7 +8,8 @@ namespace PuzzleToe
             InitializeComponent();
         }
 
-        TicTacToe.TicTactoe gameForm;
+        private TicTacToe.TicTactoe gameForm;
+        private About aboutForm;
 
         private void startBtn_Click(object sender, EventArgs e)
         {
@@ -16,6 +17,20 @@ namespace PuzzleToe
 
             gameForm.Show();
             this.Hide();
+
+        }
+
+
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void aboutBtn_Click(object sender, EventArgs e)
+        {
+            aboutForm = new About();
+            aboutForm.Show();
 
         }
     }
