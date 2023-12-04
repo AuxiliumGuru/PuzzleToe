@@ -44,6 +44,7 @@
             // 
             // closeBtn
             // 
+            closeBtn.Cursor = Cursors.Hand;
             closeBtn.Location = new Point(76, 157);
             closeBtn.Name = "closeBtn";
             closeBtn.Size = new Size(75, 23);

@@ -165,6 +165,7 @@
             // 
             backBtn.BackColor = SystemColors.ActiveCaption;
             backBtn.BackgroundImage = PuzzleToe.Properties.Resources.back;
+            backBtn.Cursor = Cursors.Hand;
             backBtn.ForeColor = SystemColors.Menu;
             backBtn.Location = new Point(22, 17);
             backBtn.Name = "backBtn";
