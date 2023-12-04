@@ -46,6 +46,7 @@
             // 
             // button1
             // 
+            button1.Cursor = Cursors.Hand;
             button1.Location = new Point(139, 219);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
