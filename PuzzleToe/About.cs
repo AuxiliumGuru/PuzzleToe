@@ -38,7 +38,7 @@ namespace PuzzleToe
             "  Allan Khester Mesa" + Environment.NewLine +
             "  Kenn-Roe Basseg" + Environment.NewLine +
             "  Rey Christian Ramos" + Environment.NewLine +
-            "  Xadiran Kyle Pinera" + Environment.NewLine +
+            "  Xadrian Kyle Pinera" + Environment.NewLine +
             "  Rommel Christian Chua" + Environment.NewLine +
             "  Yves Alcantara" + Environment.NewLine;
             ;

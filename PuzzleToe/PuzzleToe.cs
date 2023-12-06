@@ -24,7 +24,11 @@ namespace PuzzleToe
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
+            DialogResult result = MessageBox.Show("Are you sure?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            
+            if (result == DialogResult.Yes)
+                Application.Exit();
         }
 
         private void aboutBtn_Click(object sender, EventArgs e)
