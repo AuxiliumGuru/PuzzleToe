@@ -1,4 +1,5 @@
 using PuzzleToe;
+using System.Data;
 using System.Text.RegularExpressions;
 namespace BracketQuest
 {
@@ -43,6 +44,7 @@ namespace BracketQuest
 
         }
 
+
         private void confirmBtn_Click(object sender, EventArgs e)
         {
             string input = inputTxt.Text;
@@ -50,6 +52,12 @@ namespace BracketQuest
             if (Regex.IsMatch(input, pattern))
             {
                 MessageBox.Show("Alphabet caught in the input", "Alphabet Catcher", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            else if (input.All(char.IsDigit))
+            {
+                MessageBox.Show("Invalid Arithmetic Expression", "Digit Catcher", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
             else
             {
