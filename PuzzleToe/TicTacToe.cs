@@ -89,7 +89,7 @@ namespace TicTacToe
 
         public void getSideGame_O(object sender)
         {
-            if (num_tiles_played_o > 3)
+            if (num_tiles_played_o > 2)
             {
                 getWordleGame(sender);
             }
@@ -107,7 +107,7 @@ namespace TicTacToe
 
         public void getSideGame_X(object sender)
         {
-            if (num_tiles_played_x > 3)
+            if (num_tiles_played_x > 2)
             {
                 getWordleGame(sender);
             }
